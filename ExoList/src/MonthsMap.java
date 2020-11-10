@@ -10,16 +10,16 @@ public class MonthsMap {
         /* months.put("June", 6);
         months.put("September", 9);
         months.put("March", 5); */
-        private static final String kSeptember = "September";
-        private static final String kMarch = "March";
-    	private static final String kJune = "June";
+        final String kSeptember = "September";
+        final String kMarch = "March";
+    	final String kJune = "June";
     	
     	months.put(kJune, 6);
     	months.put(kSeptember, 9);
     	months.put(kMarch, 5);
           
         //TODO Corrigez "march" (mars) par sa vraie valeur (3)
-        months.set("March", 3);
+        months.put("March", 3);
      
         //TODO Supprimez "june" (juin)
         months.remove(kJune);
