@@ -43,11 +43,15 @@ public class Renault implements Voiture {
 	public int getNbPassager() {
 		return passsagerlist.size();
 	}
-
-
 	
 	public String toString() {
 		return ":: " + _strnamevoiture;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

@@ -10,6 +10,7 @@ public interface Voiture {
 	int getNbPassager();
 	boolean isFull();
 	public String toString();
+	boolean isEmpty();
 	
 	
 }
