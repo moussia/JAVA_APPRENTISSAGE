@@ -58,4 +58,10 @@ public class Peugeot implements Voiture {
 		return false;
 	}
 
+	@Override
+	public boolean ajouterPassager() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

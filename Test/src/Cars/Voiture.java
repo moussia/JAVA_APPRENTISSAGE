@@ -11,6 +11,7 @@ public interface Voiture {
 	boolean isFull();
 	public String toString();
 	boolean isEmpty();
+	boolean ajouterPassager();
 	
 	
 }

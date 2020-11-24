@@ -8,6 +8,7 @@ public class Renault implements Voiture {
 	private List<Passager> passsagerlist;
 	private int size;
 	
+	
 	public Renault(String name, int size) {
 		this._strnamevoiture = name;
 		this.size = size;
@@ -43,13 +44,29 @@ public class Renault implements Voiture {
 	public int getNbPassager() {
 		return passsagerlist.size();
 	}
-	
+	private String getStatut() {
+		if( this.isFull() )
+			return "Rempli";
+		if (this.isEmpty())
+			return "Vide";
+		return "Partiellement occupée";
+	}
+
 	public String toString() {
-		return ":: " + _strnamevoiture;
+		String str = "Nom: " + this._strnamevoiture + "\n";
+		str += "statut: " + this.getStatut() + "\n";
+		str += "Place: " + this.getNbPassager() + "/" + this.size + "\n";
+		return str  ;
 	}
 
 	@Override
 	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean ajouterPassager() {
 		// TODO Auto-generated method stub
 		return false;
 	}

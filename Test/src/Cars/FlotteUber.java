@@ -56,10 +56,17 @@ public class FlotteUber{
 	public List<Voiture> getListVoiture() {
 		return listVoiture;
 	}
+	
 	//afficher tt les voitures et combien il y a des personne dan sles voitures
 	// nom de la voiture, statut : , place 5/9.
+	@Override
 	public String toString() {
-		return "Voiture: " + name + " Statut: ";
+		String str = "";
+		
+		for ( Voiture voiture : this.listVoiture) {
+			str += voiture.toString() + "\n";
+		}
+		return str;
 	}
 	
 	//recupere la voiture qui a le moins de passager.
